@@ -1,8 +1,20 @@
 import React from 'react';
 import Sidebar from 'react-sidebar';
 
+const styles = {
+    hamburgerStyle: {
+        color: 'white',
+        fontSize: '32px',
+        marginLeft: '24px',
+        position: 'relative',
+        top: '16px',
+        cursor: 'pointer'
+    }
+}
+
 const Sidenav = (props) => (
     <Sidebar
+        styles={{root: {right: '1000px'}}}
         sidebar={(
             <div className="sidenav">
                 <nav>
@@ -34,16 +46,5 @@ const Sidenav = (props) => (
         </ion-icon>
     </Sidebar>
 );
-
-const styles = {
-    hamburgerStyle: {
-        color: 'white',
-        fontSize: '32px',
-        marginLeft: '24px',
-        position: 'relative',
-        top: '16px',
-        cursor: 'pointer'
-    }
-}
 
 export default Sidenav;

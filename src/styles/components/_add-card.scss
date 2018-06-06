@@ -1,0 +1,28 @@
+.add-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: $m-size;
+    border: 1px solid #dfe4e7;
+    z-index: 6;
+}
+.add-card p {
+    font-size: $s-size;
+}
+.add-card h2 {
+    font-size: $m-size;
+}
+.add-card form div {
+    display: inline-block;
+    margin-left: $l-size;
+}
+.add-card label {
+    display: block;
+    margin-bottom: $s-size;
+    font-size: $smedium-size;
+    font-weight: 600;
+}
+.add-card form input {
+    font-size: $smedium-size;
+}
