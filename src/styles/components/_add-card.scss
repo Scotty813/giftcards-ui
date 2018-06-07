@@ -13,6 +13,8 @@
 .add-card h2 {
     font-size: $m-size;
 }
+.add-card form {
+}
 .add-card form div {
     display: inline-block;
     margin-left: $l-size;
@@ -25,4 +27,19 @@
 }
 .add-card form input {
     font-size: $smedium-size;
+    border: 1px solid $green;
+    height: $l-size;
+}
+.checkmark {
+    position: relative;
+    top: 10px;
+}
+.add-card form ion-icon {
+    margin-left: -$m-size;
+    font-size: $l-size;
+    transition: color .15s linear;
+    padding: 2px;
+}
+.add-card form ion-icon:hover {
+    color: $green;
 }

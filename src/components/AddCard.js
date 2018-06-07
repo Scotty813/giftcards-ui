@@ -36,8 +36,8 @@ class AddCard extends React.Component {
                             <input type="text" name="pin"/>
                         </div>
 
-                        <div>
-                            <button type="submit">Add Card</button>
+                        <div className="checkmark">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </form>
                 </div> 

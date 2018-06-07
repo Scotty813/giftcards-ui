@@ -10,3 +10,9 @@ body {
     background: $light-grey;
     color: $black;
 }
+
+.btn {
+    font-weight: 200;
+    font-size: $smedium-size;
+    padding: $s-size $m-size;
+}
