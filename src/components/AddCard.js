@@ -12,9 +12,17 @@ class AddCard extends React.Component {
         e.preventDefault();
         const cardNumber = e.target.elements.cardNumber.value.trim();
         const pin = e.target.elements.pin.value.trim();
-
+        console.log("In Add Card");
         console.log(cardNumber);
         console.log(pin);
+        const card = {
+            cardNumber,
+            pin
+        }
+        this.props.addInfo(card);
+
+        e.target.elements.cardNumber.value = "";
+        e.target.elements.pin.value = "";
     }
     
     render() {
@@ -37,7 +45,9 @@ class AddCard extends React.Component {
                         </div>
 
                         <div className="checkmark">
-                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <button>
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            </button>
                         </div>
                     </form>
                 </div> 

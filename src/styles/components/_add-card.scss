@@ -34,8 +34,12 @@
     position: relative;
     top: 10px;
 }
+.checkmark button {
+    border: none;
+    outline: none;
+}
 .add-card form ion-icon {
-    margin-left: -$m-size;
+    margin-left: -$l-size;
     font-size: $l-size;
     transition: color .15s linear;
     padding: 2px;
