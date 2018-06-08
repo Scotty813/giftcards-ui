@@ -15,10 +15,8 @@ class Container extends React.Component {
         console.log("Hello from Container!");
         console.log(card);
         this.setState((prevState) => ({
-            cards: prevState.cards.push(card)
+            cards: prevState.cards.concat(card)
         }))
-        console.log("state is now");
-        console.log(this.state.cards);
     }
     render() {
         return (
