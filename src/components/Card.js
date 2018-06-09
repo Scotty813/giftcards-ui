@@ -7,7 +7,6 @@ const odd = {
     color: '#009cde'
 }
 
-
 const Card = (props) => (
     <div className="card">
         <ion-icon 
