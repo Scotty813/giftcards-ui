@@ -17,7 +17,7 @@ nav {
 
 }
 .sidenav li {
-    padding: $s-size;
+    padding: $smedium-size;
     padding-left: 0;
     font-size: 1.8rem;
 }
@@ -34,18 +34,16 @@ nav {
 .bottom-nav {
     border-top: 1px solid $black;
     margin-top: $s-size;
-    display: inline-flex;
-    // align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 .bottom-nav ion-icon {
     display: inline-block;
     margin-right: 10px;
     margin-top: 0;
+    margin-left: 0;
 }
 .bottom-nav li {
     display: flex;
     align-items: center;
+    padding-top: $m-size;
     padding-bottom: 0;
 }

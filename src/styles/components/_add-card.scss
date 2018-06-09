@@ -29,6 +29,7 @@
     font-size: $smedium-size;
     border: 1px solid $green;
     height: $l-size;
+    padding: 0 5px;
 }
 .checkmark {
     position: relative;
@@ -41,6 +42,7 @@
 .add-card form ion-icon {
     margin-left: -$l-size;
     font-size: $l-size;
+    color: $black;
     transition: color .15s linear;
     padding: 2px;
 }

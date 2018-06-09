@@ -1,5 +1,6 @@
 import React from 'react';
 import AddCard from './AddCard';
+import CardList from './CardList';
 
 class Container extends React.Component {
     constructor(props) {
@@ -21,9 +22,9 @@ class Container extends React.Component {
     render() {
         return (
             <div className="container">
-                <AddCard 
-                    addInfo={this.addInfo}
-                />
+                <AddCard addInfo={this.addInfo} />
+                <CardList  cards={this.state.cards}/>
+                
             </div>
         )
     }

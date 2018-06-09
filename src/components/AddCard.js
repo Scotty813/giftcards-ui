@@ -12,17 +12,18 @@ class AddCard extends React.Component {
         e.preventDefault();
         const cardNumber = e.target.elements.cardNumber.value.trim();
         const pin = e.target.elements.pin.value.trim();
-        console.log("In Add Card");
-        console.log(cardNumber);
-        console.log(pin);
+        const company = e.target.elements.company.value.trim();
+        
         const card = {
             cardNumber,
-            pin
+            pin,
+            company
         }
         this.props.addInfo(card);
 
         e.target.elements.cardNumber.value = "";
         e.target.elements.pin.value = "";
+        e.target.elements.company.value = "";
     }
     
     render() {
@@ -41,7 +42,12 @@ class AddCard extends React.Component {
 
                         <div>
                             <label>Pin</label>
-                            <input type="text" name="pin"/>
+                            <input type="password" name="pin" maxLength="4" size="8"/>
+                        </div>
+
+                        <div>
+                            <label>Company</label>
+                            <input type="text" name="company"/>
                         </div>
 
                         <div className="checkmark">
