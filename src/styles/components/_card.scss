@@ -1,0 +1,23 @@
+.card {
+    width: 31%;
+    background: $white;
+    padding: $m-size;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header p {
+    margin: 0;
+}
+.card ion-icon {
+    margin-left: -5px;
+    font-size: 64px;
+}
+.company {
+    font-size: $m-size;
+}
+.amount {
+    font-size: $xl-size;
+}

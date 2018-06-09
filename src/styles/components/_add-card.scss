@@ -38,9 +38,10 @@
 .checkmark button {
     border: none;
     outline: none;
+    padding-right: 0;
 }
 .add-card form ion-icon {
-    margin-left: -$l-size;
+    margin-left: -$xl-size;
     font-size: $l-size;
     color: $black;
     transition: color .15s linear;

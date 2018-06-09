@@ -4,13 +4,13 @@ import Card from './Card';
 const CardList = (props) => (
     <div>
         {!props.cards.length && <p className="no-content">Add a card to get started!</p>}
-        <div>
+        <div className="list-container">
             {
-                props.cards.map((card) => (
+                props.cards.map((card, index) => (
                     <Card 
                         key={card}
                         cardText={card}
-                        
+                        index={index}
                     />
                 ))
             }

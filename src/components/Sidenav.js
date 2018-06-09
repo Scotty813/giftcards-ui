@@ -27,6 +27,8 @@ const Sidenav = (props) => (
                         <li><a>My Account</a></li>
                         <li><a>Manage Cards</a></li>
                         <li><a>Marketplace</a></li>
+                        <li><a>Transaction History</a></li>
+                        <li><a>Archived Cards</a></li>
                         <div className="bottom-nav">
                             <li><ion-icon name="help-circle-outline"></ion-icon><a>Get Help</a></li>
                             <li><ion-icon name="log-out"></ion-icon><a>Sign Out</a></li>

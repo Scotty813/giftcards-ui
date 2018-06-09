@@ -5,3 +5,9 @@
     font-weight: 600;
     color: #b1b1b133;
 }
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: $l-size 0;
+}

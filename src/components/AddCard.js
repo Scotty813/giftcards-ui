@@ -13,17 +13,20 @@ class AddCard extends React.Component {
         const cardNumber = e.target.elements.cardNumber.value.trim();
         const pin = e.target.elements.pin.value.trim();
         const company = e.target.elements.company.value.trim();
+        const amount = e.target.elements.amount.value.trim();
         
         const card = {
             cardNumber,
             pin,
-            company
+            company,
+            amount
         }
         this.props.addInfo(card);
 
         e.target.elements.cardNumber.value = "";
         e.target.elements.pin.value = "";
         e.target.elements.company.value = "";
+        e.target.elements.amount.value = "";
     }
     
     render() {
@@ -37,12 +40,17 @@ class AddCard extends React.Component {
                     <form onSubmit={this.addInfo}>
                         <div>
                             <label>Card Number</label>
-                            <input type="text" name="cardNumber"/>
+                            <input type="text" maxLength="16" name="cardNumber"/>
                         </div>
 
                         <div>
                             <label>Pin</label>
-                            <input type="password" name="pin" maxLength="4" size="8"/>
+                            <input type="password" name="pin" maxLength="4" size="6"/>
+                        </div>
+
+                        <div>
+                            <label>Amount</label>
+                            <input name="amount" size="7"/>
                         </div>
 
                         <div>
