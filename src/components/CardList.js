@@ -8,9 +8,10 @@ const CardList = (props) => (
             {
                 props.cards.map((card, index) => (
                     <Card 
-                        key={card}
+                        key={index}
                         cardText={card}
                         index={index}
+                        handleDeleteCard={props.handleDeleteCard}
                     />
                 ))
             }

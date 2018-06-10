@@ -10,21 +10,30 @@ class Container extends React.Component {
             cards: []
         }
         this.addInfo = this.addInfo.bind(this);
+        this.handleDeleteCard = this.handleDeleteCard.bind(this);
     }
 
     addInfo = (card) => {
-        console.log("Hello from Container!");
-        console.log(card);
         this.setState((prevState) => ({
             cards: prevState.cards.concat(card)
         }))
     }
+
+    handleDeleteCard = (cardToRemove) => {
+        console.log("Delete is working! sort of...");
+        this.setState((prevState) => ({
+            cards: prevState.cards.filter((card, i) =>  cardToRemove !== i)
+        }));
+    }
+
     render() {
         return (
             <div className="container">
                 <AddCard addInfo={this.addInfo} />
-                <CardList  cards={this.state.cards}/>
-                
+                <CardList  
+                    cards={this.state.cards}
+                    handleDeleteCard={this.handleDeleteCard}
+                />
             </div>
         )
     }

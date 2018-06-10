@@ -1,7 +1,20 @@
 .card {
+    // display: inline-block;
+    // margin-right: auto;
+    position: relative;
     width: 31%;
     background: $white;
     padding: $m-size;
+    outline: 1px solid #dfe4e7;
+}
+#delete-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: $m-size;
+    color: #e68585;
+    cursor: pointer;
+    padding: 3px;
 }
 .header {
     display: flex;
@@ -13,11 +26,19 @@
 }
 .card ion-icon {
     margin-left: -5px;
-    font-size: 64px;
+    font-size: 70px;
 }
 .company {
     font-size: $m-size;
 }
 .amount {
     font-size: $xl-size;
+}
+.card-details {
+    margin-top: $m-size;
+    padding-top: $s-size;
+    font-size: $smedium-size;
+}
+.card-details span {
+    padding-left: $xs-size;
 }
