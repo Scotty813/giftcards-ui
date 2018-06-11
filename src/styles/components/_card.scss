@@ -1,16 +1,13 @@
 .card {
-    // display: inline-block;
-    // margin-right: auto;
     position: relative;
-    width: 31%;
     background: $white;
     padding: $m-size;
     outline: 1px solid #dfe4e7;
 }
 #delete-icon {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 10px;
+    top: 10px;
     font-size: $m-size;
     color: #e68585;
     cursor: pointer;

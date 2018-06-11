@@ -6,8 +6,10 @@
     color: #b1b1b133;
 }
 .list-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: $l-size 0;
+    margin-top: $l-size;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: $l-size;
+    grid-row-gap: $l-size;
 }

@@ -35,6 +35,7 @@ class Container extends React.Component {
                     handleDeleteCard={this.handleDeleteCard}
                 />
             </div>
+            
         )
     }
     
