@@ -13,3 +13,21 @@
     grid-column-gap: $l-size;
     grid-row-gap: $l-size;
 }
+
+// .card-transition-enter {
+//     opacity: 0.01;
+//   }
+  
+//   .card-transition-enter.card-transition-enter-active {
+//     opacity: 1;
+//     transition: opacity 500ms ease-in;
+//   }
+  
+//   .card-transition-leave {
+//     opacity: 1;
+//   }
+  
+//   .card-transition-leave.card-transition-leave-active {
+//     opacity: 0.01;
+//     transition: opacity 300ms ease-in;
+//   }

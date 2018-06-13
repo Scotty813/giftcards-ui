@@ -1,12 +1,5 @@
 import React from 'react';
 
-const even = {
-    color: '#72d832'
-}
-const odd = {
-    color: '#009cde'
-}
-
 const Card = (props) => (
     <div className="card">
         <ion-icon 
@@ -35,5 +28,12 @@ const Card = (props) => (
         </div>
     </div>
 )
+
+const even = {
+    color: '#72d832'
+}
+const odd = {
+    color: '#009cde'
+}
 
 export default Card;
