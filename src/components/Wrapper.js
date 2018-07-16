@@ -2,7 +2,7 @@ import React from 'react';
 import AddCard from './AddCard';
 import CardList from './CardList';
 
-class Container extends React.Component {
+class Wrapper extends React.Component {
     constructor(props) {
         super(props);
 
@@ -41,4 +41,4 @@ class Container extends React.Component {
     
 }
 
-export default Container;
+export default Wrapper;

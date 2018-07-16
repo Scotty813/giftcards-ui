@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from './Container';
+import Wrapper from './Wrapper';
 import Header from './Header';
 import Sidenav from './Sidenav';
 
@@ -20,7 +20,7 @@ class GiftCardsUI extends React.Component {
         return (
             <div>
                 <Header />
-                <Container />
+                <Wrapper />
                 <Sidenav 
                     isOpen={this.state.sidebarOpen}
                     openSidebar={this.onSetSidebarOpen}
